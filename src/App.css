@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-aside {
+  position: fixed;
+  left: 0;
+  top: 10vh;
+  bottom: 0;
+  width: 200px;
+  background-color: aquamarine;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-content {
+  position: relative;
+  left: 200px;
+  width: calc(100% - 200px);
+}
+
+.App-chart {
+  height: 300px;
+  padding: 10px;
+}
+
+.App-api {
+  height: auto;
+  color: #fff;
+  border-top: 1px solid #666;
+  padding: 10px;
+}
+
+.chart-container {
+  position: relative;
+  height: 300px;
+}
+
+.tooltip-container {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 6px 10px;
+  transform: translate(-50%, -100%);
+  border-radius: 4px;
+  color: #fff;
+  height: auto;
+  display: none;
+  min-width: 120px;
+  max-width: 260px;
+  font-size: 12px;
+}
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -5px;
+}
+.tooltip-container > .tooltip-arrow {
+  border-width: 5px 5px 0;
+  border-top-color: rgba(0,0,0,0.75);
+}

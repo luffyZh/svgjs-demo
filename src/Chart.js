@@ -55,7 +55,7 @@ function drawPolygonArea(draw, data) {
   const polygonGroup = draw.group().move(140, 0);
   const polygon_transform = draw.polygon('0 290, 120 290, 180 210,0 210').fill('#ACD3FA');
   polygonGroup.add(polygon_transform);
-  const text_transform1 = draw.text(`付费线索数: ${data.param1}`)
+  const text_transform1 = draw.text(`DDDD数: ${data.param1}`)
     .move(30, 260).fill('#fff').font({ size: 12 });
   polygonGroup.add(text_transform1);
   const image_transform1 = draw.image(question_circle, 14, 14).move(10, 256);
@@ -67,7 +67,7 @@ function drawPolygonArea(draw, data) {
     document.getElementById('hover_container').style.display = 'none';
   });
   polygonGroup.add(image_transform1);
-  const text_transform2 = draw.text(`新增线索数: ${data.param2}`)
+  const text_transform2 = draw.text(`EEEE数: ${data.param2}`)
     .move(30, 230).fill('#fff').font({ size: 12 });
   polygonGroup.add(text_transform2);
   const image_transform2 = draw.image(question_circle, 14, 14).move(10, 226);
@@ -81,7 +81,7 @@ function drawPolygonArea(draw, data) {
   polygonGroup.add(image_transform2);
   const polygon_visit = draw.polygon('0 190, 190 190, 250 110, 0 110').fill('#62A2F6');
   polygonGroup.add(polygon_visit);
-  const text_visit = draw.text(`落地页浏览数: ${data.param3}`)
+  const text_visit = draw.text(`FFFFF数: ${data.param3}`)
     .move(30, 150).fill('#fff').font({ size: 12 });
   polygonGroup.add(text_visit);
   const image_visit = draw.image(question_circle, 14, 14).move(10, 146);
@@ -95,7 +95,7 @@ function drawPolygonArea(draw, data) {
   polygonGroup.add(image_visit);
   const polygon_join = draw.polygon('0 90, 260 90, 320 10, 0 10').fill('#1C60F1');
   polygonGroup.add(polygon_join);
-  const text_join1 = draw.text(`有效分享人数: ${data.param4}`)
+  const text_join1 = draw.text(`GGGG数: ${data.param4}`)
     .move(30, 60).fill('#fff').font({ size: 12 });
   polygonGroup.add(text_join1);
   const image_join1 = draw.image(question_circle, 14, 14).move(10, 56);
@@ -107,7 +107,7 @@ function drawPolygonArea(draw, data) {
     document.getElementById('hover_container').style.display = 'none';
   });
   polygonGroup.add(image_join1);
-  const text_join2 = draw.text(`海报制作页浏览人数: ${data.param5}`)
+  const text_join2 = draw.text(`HHHHHH数: ${data.param5}`)
     .move(30, 30).fill('#fff').font({ size: 12 });
   polygonGroup.add(text_join2);
   const image_join2 = draw.image(question_circle, 14, 14).move(10, 26);
@@ -151,7 +151,7 @@ function drawArrowLine(draw, data) {
   image_paid_transform.on('mouseleave', function() {
     document.getElementById('hover_container').style.display = 'none';
   });
-  const text_paid_transform = draw.text(`付费转化率：${(data.param6 * 100).toFixed(2)}%`)
+  const text_paid_transform = draw.text(`NNNNNN率：${(data.param6 * 100).toFixed(2)}%`)
     .move(364, 256).fill('#5F6369').font({ size: 12 });
   arrowTextGroup.add(polyline_paid_rate)
     .add(polygon_paid_rate)
@@ -168,7 +168,7 @@ function drawArrowLine(draw, data) {
   image_landing_transform.on('mouseleave', function() {
     document.getElementById('hover_container').style.display = 'none';
   });
-  const text_landing_transform = draw.text(`落地页转化率：${(data.param5 * 100).toFixed(2)}%`)
+  const text_landing_transform = draw.text(`XXXXXX率：${(data.param5 * 100).toFixed(2)}%`)
     .move(364, 176).fill('#5F6369').font({ size: 12 });
   arrowTextGroup.add(polyline_landing_rate)
     .add(polygon_landing_rate)
@@ -185,7 +185,7 @@ function drawArrowLine(draw, data) {
   image_old_join.on('mouseleave', function() {
     document.getElementById('hover_container').style.display = 'none';
   });
-  const text_old_join = draw.text(`老客参与率：${(data.param4 * 100).toFixed(2)}%`)
+  const text_old_join = draw.text(`YYYYYY率：${(data.param4 * 100).toFixed(2)}%`)
     .move(364, 40).fill('#5F6369').font({ size: 12 });
   arrowTextGroup.add(polyline_old_join)
     .add(polygon_old_join)
@@ -202,7 +202,7 @@ function drawArrowLine(draw, data) {
   image_referral_per.on('mouseleave', function() {
     document.getElementById('hover_container').style.display = 'none';
   });
-  const text_referral_per = draw.text(`人均转介数：${(data.param3 * 100).toFixed(2)}%`)
+  const text_referral_per = draw.text(`UUUUUU数：${(data.param3 * 100).toFixed(2)}%`)
     .move(544, 140).fill('#5F6369').font({ size: 12 });
   arrowTextGroup.add(polyline_referral_per)
     .add(polygon_referral_per)
